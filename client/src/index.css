@@ -1,0 +1,161 @@
+:root {
+  --bg: #f4f6f8;
+  --card: #fff;
+  --muted: #6c757d;
+  --accent: #2563eb;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, Segoe UI, Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: #0f172a;
+  color: #fff
+}
+
+.brand {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700
+}
+
+.container {
+  padding: 20px
+}
+
+.btn {
+  background: var(--accent);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  margin-left: 8px;
+  cursor: pointer;
+  text-decoration: none
+}
+
+.username {
+  margin-right: 10px;
+  color: #fff
+}
+
+.form {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 480px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06)
+}
+
+.form h2 {
+  margin: 0 0 12px
+}
+
+.label {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--muted)
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  margin-top: 6px
+}
+
+.grid {
+  display: flex;
+  gap: 12px
+}
+
+.board {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start
+}
+
+.column {
+  flex: 1;
+  background: #eef2ff;
+  padding: 12px;
+  border-radius: 8px;
+  min-height: 300px
+}
+
+.column h3 {
+  margin: 0 0 8px
+}
+
+.card {
+  background: var(--card);
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06)
+}
+
+.card .meta {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 6px
+}
+
+.toolbar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 12px
+}
+
+.search {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0
+}
+
+.small {
+  font-size: 13px;
+  padding: 6px 8px
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.modal {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 8px;
+  min-width: 320px
+}
+
+.select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  margin-top: 6px
+}
+
+.inline-input {
+  width: 100%;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0
+}

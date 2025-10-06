@@ -76,9 +76,6 @@ bld/
 *.nuget.props
 *.nuget.targets
 
-# Exclude entire client folder
-client/
-
 # Node.js / React / Vite specific
 node_modules/
 npm-debug.log*

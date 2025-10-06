@@ -68,8 +68,8 @@ This API provides backend services for the MedLogix Task Management system. Buil
   "id": 0,
   "title": "string",
   "description": "string",
-  "status": 0, // 0:Todo, 1:InProgress, 2:Done
-  "priority": 0, // 0:Low, 1:Medium, 2:High
+  "status": "Todo", // Todo, InProgress, Done
+  "priority": "Low", // Low, Medium, High
   "createdAt": "2025-10-06T12:00:00Z",
   "dueDate": "2025-10-15T12:00:00Z",
   "creatorId": 1,
