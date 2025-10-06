@@ -1,0 +1,68 @@
+@TaskManagement.Api_HostAddress = http://localhost:5195
+
+
+https://web.postman.co/workspace/My-Workspace~5d04dbd3-fce7-41ed-8ab1-e1e81dbd8582/collection/5570174-8e9e970a-d346-4b4d-8a43-403b19dfe7c8?action=share&source=copy-link&creator=5570174
+
+
+POST /api/auth/register HTTP/1.1
+Host: localhost:5195
+Conte: application/json
+Content-Length: 95
+
+{
+    "Email": "akshay101@gmail.com",
+    "Password": "test",
+    "UserName": "akshay101"
+}
+
+POST /api/auth/login HTTP/1.1
+Host: localhost:5195
+Content-Type: application/json
+Content-Length: 62
+
+{
+        "Email": "admin@example.com",
+        "Password": "Admin@123"
+}
+
+
+POST /api/auth/login HTTP/1.1
+Host: localhost:5195
+Content-Type: application/json
+Content-Length: 59
+
+{
+	"Email": "akshay101@gmail.com",
+        "Password": "test"
+}
+
+DELETE /api/tasks/4 HTTP/1.1
+Host: localhost:5195
+
+POST /api/tasks HTTP/1.1
+Host: localhost:5195
+Content-Length: 168
+
+{
+  "title": "TrueStage part 2",
+  "description": "Compile and review all TrueStage Task. part 2",
+  "status": "Todo",
+  "assigneeId": 4,
+  "priority": "High"
+
+}
+
+PUT /api/tasks/4 HTTP/1.1
+Host: localhost:5195
+Content-Length: 561
+
+{
+    "title": "TrueStage part 4",
+    "description": "Compile and review all TrueStage Task. part 4",
+    "status": "Done",
+    "priority": "High",
+    "assigneeId": 4,
+    "creatorId": 0,
+    "createdAt": "0001-01-01T00:00:00",
+    "updatedAt": "0001-01-01T00:00:00",
+}
